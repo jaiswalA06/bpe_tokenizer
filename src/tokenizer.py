@@ -10,7 +10,7 @@ class BPETokenizer:
     def get_stats(self, corpus):
         pairs = Counter()
         for word in corpus:
-            for i in range(len(word)):
+            for i in range(len(word)-1):
                 pairs[(word[i], word[i+1])] += 1
         return pairs
 
