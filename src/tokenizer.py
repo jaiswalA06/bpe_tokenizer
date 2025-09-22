@@ -44,3 +44,10 @@ class BPETokenizer:
         self.vocab = {tok: i for i, tok in enumerate(sorted(unique_tokens))}
         self.inverse_vocab = {i: tok for tok, i in self.vocab.items()}
 
+    def encode(self, text):
+        words = [list(word) for word in text.strip().split()]
+        for pair in self.merges:
+            words = self.merge_vocab(pair, words)
+        tokens = [self.vocab[token] for word in words for token in word]  # ❌ KeyError if token not in vocab
+        return tokens
+
