@@ -58,6 +58,7 @@ Results written to output.txt
 The provided alice.txt contains paragraphs from Alice’s Adventures in Wonderland by Lewis Carroll, which serves as the training corpus.
 
 📝 Notes
+
 This is a minimal educational BPE tokenizer, not optimized for production use.
 
 Special tokens, regex pre-tokenization, and Unicode corner cases are ignored for simplicity.
