@@ -25,11 +25,13 @@ bpe_tokenizer/
 ```bash
 git clone https://github.com/<your-username>/bpe_tokenizer.git
 cd bpe_tokenizer
-
+```
 
 2. Run the demo
 
+```bash
 python src/main.py
+```
 
 3. Output
 The script will:
@@ -40,8 +42,9 @@ Encode and decode a sample sentence.
 
 Save results in output.txt.
 
-Example console output:
+4. Example console output:
 
+```bash
 Training tokenizer...
 
 Encoding: Alice was beginning to get very tired
@@ -49,6 +52,8 @@ Tokens: [3, 7, 14, 22, 5, ...]
 Decoded: Alicewasbeginningtogetverytired
 
 Results written to output.txt
+```
+
 🧪 Example Corpus (alice.txt)
 The provided alice.txt contains paragraphs from Alice’s Adventures in Wonderland by Lewis Carroll, which serves as the training corpus.
 
