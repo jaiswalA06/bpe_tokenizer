@@ -48,6 +48,10 @@ class BPETokenizer:
         words = [list(word) for word in text.strip().split()]
         for pair in self.merges:
             words = self.merge_vocab(pair, words)
-        tokens = [self.vocab[token] for word in words for token in word]  # ❌ KeyError if token not in vocab
+        tokens = [self.vocab[token] for word in words for token in word if token in self.vocab]
         return tokens
+
+    def decode(self, token_ids):
+        subwords = [self.inverse_vocab[idx] for idx in token_ids]
+        return "".join(subwords)
 
