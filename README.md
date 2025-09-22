@@ -22,23 +22,38 @@ bpe_tokenizer/
 
 ### 1. Clone the repository  
 
-git clone https://github.com/<jaiswalaA06>/bpe_tokenizer.git
+```bash
+git clone https://github.com/<your-username>/bpe_tokenizer.git
 cd bpe_tokenizer
 
+
 2. Run the demo
+
 python src/main.py
 
 3. Output
 The script will:
-    Train the tokenizer on alice.txt.
-    Encode and decode a sample sentence.
-    Save results in output.txt.
-    Results written to output.txt
 
-4. Example Corpus (alice.txt)
+Train the tokenizer on alice.txt.
+
+Encode and decode a sample sentence.
+
+Save results in output.txt.
+
+Example console output:
+
+Training tokenizer...
+
+Encoding: Alice was beginning to get very tired
+Tokens: [3, 7, 14, 22, 5, ...]
+Decoded: Alicewasbeginningtogetverytired
+
+Results written to output.txt
+🧪 Example Corpus (alice.txt)
 The provided alice.txt contains paragraphs from Alice’s Adventures in Wonderland by Lewis Carroll, which serves as the training corpus.
 
 📝 Notes
 This is a minimal educational BPE tokenizer, not optimized for production use.
+
 Special tokens, regex pre-tokenization, and Unicode corner cases are ignored for simplicity.
 
