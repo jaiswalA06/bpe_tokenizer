@@ -1,0 +1,4 @@
+=== BPE Tokenizer Demo ===
+Original: Alice was beginning to get very tired
+Encoded: [17, 114, 56, 66, 73, 87, 74, 108, 66, 61, 105, 112, 116, 105, 71, 98, 60]
+Decoded: Alicewasbeginningtogetverytired
